@@ -24,6 +24,9 @@
     padding: 18px 35px;
     cursor: pointer;
 }
+#btn1{
+    margin-left: 20px;
+}
 
 /* common style end */
 nav {
@@ -333,9 +336,18 @@ footer{
     nav > ul{
         gap: 15px;
     }
+    
 }
 @media screen and (min-width:577px) and (max-width:800px){
     .skills-container{
             flex-direction: column;
+    }
+}
+
+@media screen and (min-width:961px) and (max-width:1280px){
+
+ #btn2 {
+    margin-top: 20px;
+
     }
 }
