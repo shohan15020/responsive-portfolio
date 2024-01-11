@@ -267,3 +267,75 @@ footer{
     text-decoration: none;
     margin-right: 25px;
 }
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+
+    .header{
+        background-image: none;
+    }
+    nav,
+    nav>ul,
+    .banner,
+    .skills-container,.resume-container,
+    .about-info-container ,footer{
+        flex-direction: column;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .banner .profile-pic {
+        width: 100%;
+    }
+    #what-i-do-p,.banner{
+        padding: 20px;
+    }
+    footer, .about{
+        padding: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea {
+        width: 70%;
+    }
+}
+@media screen and (min-width:577px) and (max-width:960px) {
+
+    .header{
+        background-image: none,url("./image/developer.png");
+    }
+    nav,
+    nav>ul,
+    .banner
+    {
+        flex-direction: column;
+    }
+    .banner{
+        padding: 30px 30px 0px 100px;
+    }
+    .resume-container{
+        padding: 30px;
+    }
+    footer{
+        padding: 40px;
+        gap: 50px;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea {
+        width: 70%;
+    }
+    nav > ul{
+        gap: 15px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:800px){
+    .skills-container{
+            flex-direction: column;
+    }
+}
